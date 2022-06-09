@@ -1,0 +1,431 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header.header{
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(220,161,33,1) 0%, rgba(229,228,232,1) 72%, rgba(236,198,7,0.03132590926995793) 96%, rgba(248,248,242,1) 100%);
+}
+.container{
+max-width: 1200px;
+margin: 0 auto;
+}
+header.header .header-nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+header.header .header-nav .logo img{
+    width: 130px;
+}
+header.header .header-nav ul.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+header.header .header-nav ul.nav li{
+    padding: 10px 20px;
+    color:black ;
+    cursor: pointer;
+    font: 1.5em;
+}
+
+header.header .header-nav ul.nav li a{
+    font-size: 1.1em;
+    font-family:sans-serif;
+    color: black;
+    font-weight: 700;
+   
+
+}
+header.header .header-nav ul.nav li:hover:not(:nth-child(6)){
+    color: wheat;
+    background:black;
+    transition: .3s ;
+    border-radius: 3px;
+ }
+ 
+header.header .header-nav ul.nav li:hover a{
+    color: wheat;
+ }
+header.header .header-nav ul.nav li img{
+    width: 30px;
+}
+/* header info */
+header.header .header-info{
+display: grid;
+height: 80vh;
+grid-template-columns: repeat(2,minmax(50%,1fr));
+}
+header.header .header-info .info-image{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header.header .header-info .info-image img{
+    max-width: 400px;
+
+}
+header.header .header-info .info{
+    display: flex;
+ flex-direction:column;
+justify-content: center;
+align-items: flex-start;
+}
+header.header .header-info .info h1{
+    text-align: left;
+    padding-bottom: 20px;
+    
+
+}header.header .header-info .info p{
+    width: 400px;
+    padding: 10px 0 20px 0;
+
+}
+header.header .header-info .info a{
+    color: wheat;
+    background:wheat;
+    font-size: 1.4em;
+    color: black;
+    padding: 10px 20px;
+    border-radius:999px;
+    box-shadow: 1px 1px 12px wheat;
+}
+
+/* start section products */
+section#products{
+width:100%;
+}
+.btn
+{
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+.btn a{
+    position: relative;
+    font-size: 1.6em;
+    font-weight:700;
+    text-transform: capitalize;
+    color: black;
+
+}
+.btn a::after{
+   content:'';
+   position:absolute;
+   left: 50%;
+   transform:translateX(-50%);
+   bottom:-20px;
+   width: 100px;
+     height:10px;
+     border-radius: 5px;
+   background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(220,161,33,1) 0%);
+}
+section#product .container{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 30px;
+}
+
+section#product .container .box{
+    width: fit-content;
+margin-bottom:20px;
+}
+
+section#products .container .box .image{
+height: 90%;
+}
+section#products .container .box .image img{
+    max-width: 100%;
+}
+
+section#product .container .box .info{
+padding: 5px 0 0 0;
+
+}
+
+section#product .container .box .info p{
+font-size: 1.2em;
+color: #333;
+}
+section#product .container .box .info .etoile {
+ padding: 10px 0;
+ color: wheat;
+}
+section#products .container .box .info span{
+
+}
+/* start section products2 */
+section#product2 .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    }
+    
+    section#product2 .container .box{
+        margin-bottom:20px;
+    }
+    
+    section#product2 .container .box .image{
+        position: relative;
+        width: 100%;
+    }
+    section#product2 .container .box .image img{
+        width: 100%;
+    }
+    
+    section#product2 .container .box .info{
+    padding: 5px 0 0 0;
+    
+    }
+    
+    section#product2 .container .box .info p{
+    font-size: 1.2em;
+    color: #333;
+    }
+    section#product2 .container .box .info .etoile {
+     padding: 10px 0;
+     color: wheat;
+    }
+    section#products2 .container .box .info span{
+    
+    }
+/* end section products2 */
+/* start section3 */
+#section3{
+    padding: 40px 0;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(220,161,33,1) 0%, rgba(229,228,232,1) 72%, rgba(236,198,7,0.03132590926995793) 96%, rgba(248,248,242,1) 100%); ;
+}
+#section3 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(2,minmax(50%,1fr));
+}
+#section3 .container .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#section3 .container .image img{
+    width:70%;
+}
+
+#section3 .container .info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#section3 .container .info span{
+    color: #333;
+    font-size: .9em;
+}
+
+#section3 .container .info h2{
+    padding: 25px 0;
+    font-size:1.8em;
+    font-weight:600;
+}
+
+#section3 .container .info p{
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#section3 .container .info a{
+    display:inline;
+    width: fit-content;
+    color: black;
+    font-size: 1.2em;
+    border-radius:999px;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 12px wheat;
+    background:rgb(230, 159, 29);
+    color:white;
+}
+/* end section3  */
+/* start section3  */
+#section4{
+    width: 100%;
+    padding: 30px 0;
+
+}
+#section4 .container{
+    max-width: 1200px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+
+#section4 .container .box{
+    background: white;
+    box-shadow: 1px 1px 17px #F1F1F1;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+#section4 .container .box > i{
+    font-size: 1.8em;
+    padding: 10px 0;
+    font-weight: bold;
+
+}
+#section4 .container .box .etoile{
+    padding: 8px 0;
+}
+#section4 .container .box .etoile i{
+    color: sandybrown;
+}
+
+#section4 .container .box p{
+    padding: 8px 0;
+    color: #666;
+    text-align:center;
+
+}
+
+#section4 .container .box img{
+    width:80Px;
+    border-radius:50%;
+}
+
+#section4 .container .box .perso span{
+    padding: 8px 0;
+}
+#section4 .container .box .perso{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* end section4  */
+/* start section5 */
+#section5{
+width: 100%;
+}
+#section5 .container{
+    max-width:1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#section5 .container .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section5 .container .box img{
+ filter: grayscale(100%);
+ transition: filter .3S;
+}
+#section5 .container .box img:hover{
+    filter: grayscale(0);
+   }
+/* start section6 */
+footer{
+background: black;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+color:white;
+padding: 40px 0;
+}
+footer .container{
+max-width: 1300Px;
+margin:0 auto;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+}
+footer .container .box1{
+
+}
+
+footer .container .box1 h2{
+padding: 5px 0;
+font-weight: 600;
+}
+
+footer .container .box1 p{
+padding: 10px 0 10px 0;
+color: #666;
+}
+
+footer .container .box1 .image{
+display: flex;
+justify-content:flex-start;
+padding: 8px 0;
+}
+
+footer .container .box1 .image img{
+width: 100px;
+}
+footer .container .box2{
+text-align: center;
+
+}
+
+footer .container .box2 img{
+width: 150px;
+margin: 10px 0;
+}
+
+footer .container .box2 p{
+color: #666;
+text-align: center;
+}
+footer .container .box3{
+text-align:center;
+}
+
+footer .container .box3 h3{
+    padding:0px 0 15px 0 ;
+    font-weight: bold;
+}
+
+footer .container .box3 ul li{
+color: #666;
+}
+
+footer .container .box4{
+    text-align:center;
+}
+
+footer .container .box4 h3{
+    padding:0px 0 15px 0 ;
+    font-weight: bold;
+}
+
+footer .container .box4 ul li{
+    color: #666;
+}
+.copyrite{
+    padding-top: 20px;
+    border-top: 1px solid #666;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+/*end section6 */
